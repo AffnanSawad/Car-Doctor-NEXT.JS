@@ -79,9 +79,17 @@ const NavBar = () => {
             )}
 
             {/* Desktop Appointment Button */}
-            <div className="hidden lg:flex navbar-end">
-                <button className="btn btn-dash btn-error">Appointment</button>
-            </div>
+            <div className="hidden   lg:flex navbar-end gap-5">
+               
+ <button className="btn btn-error text-white">Appointment</button>
+
+<Link href="/loggedin">
+
+<button className="btn btn-dash btn-error">Log In</button>
+
+</Link>         
+
+   </div>
         </div>
     );
 };
