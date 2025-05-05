@@ -1,4 +1,4 @@
-import label from "daisyui/components/label";
+import connectDB from "@/lib/connectDB";
 import CredentialsProvider from "next-auth/providers/credentials";
 
 const { default: NextAuth } = require("next-auth");
@@ -34,10 +34,11 @@ const handler = NextAuth(
                    
                     if(email){
 
-                        const currentuser = users.find(( user )=> user.email === email)
+                       const db = await connectDB();
 
-                        console.log(currentuser)
+                       const currentuser = await db.collection('users').findOne({email})
                     
+                       console.log(currentuser);
 
                     if(currentuser){
                         if(currentuser.password === password){
@@ -56,28 +57,16 @@ const handler = NextAuth(
 
         ],
 
+        pages: {
+      signIn: "/auth/login",
+    },
+
     }
 
 );
 
 
-const users = [
-    {
-      id: 1,
-      email: "john@example.com",
-      password: "password123",
-    },
-    {
-      id: 2,
-      email: "jane@example.com",
-      password: "securepass456",
-    },
-    {
-      id: 3,
-      email: "alex@example.com",
-      password: "helloWorld789",
-    },
-  ];
+
   
 
 export { handler as GET , handler as POST }

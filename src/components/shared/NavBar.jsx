@@ -110,10 +110,10 @@ const NavBar = () => {
 ) 
 
 : (
-  <Link href="api/auth/signin">
+  <Link href="/api/auth/signup">
   
   <button  className="btn  btn-accent">
-    Log In
+    Sign Up
   </button>
   
   

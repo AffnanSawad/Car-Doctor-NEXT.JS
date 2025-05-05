@@ -101,7 +101,7 @@ const page = () => {
                 {/* Sign Up Prompt */}
                 <p className="text-center text-sm mt-4 font-medium text-gray-700">
                   New here?{" "}
-                  <Link href="/signup" className="text-indigo-600 hover:underline">
+                  <Link href="/api/auth/signup" className="text-indigo-600 hover:underline">
                     Sign up first!
                   </Link>
                 </p>

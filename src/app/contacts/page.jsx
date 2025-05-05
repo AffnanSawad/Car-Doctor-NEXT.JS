@@ -3,7 +3,7 @@
 
 const ContactUs = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 flex flex-col items-center justify-center px-6 py-12">
+    <div className="min-h-screen bg-gradient-to-r from-pink-300 via-blue-200 to-purple-300 flex flex-col items-center justify-center px-6 py-12">
       <div className="w-full max-w-4xl bg-white p-8 rounded-lg shadow-xl">
         <h2 className="text-4xl font-extrabold text-center text-indigo-800 mb-6">Contact Us</h2>
         <p className="text-lg text-center text-gray-600 mb-12">

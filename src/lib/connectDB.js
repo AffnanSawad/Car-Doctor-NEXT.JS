@@ -11,9 +11,11 @@ export const connectDB = async () => {
         deprecationErrors: true,
       },
     });
-    db = client.db('car-doctor')
+    db = client.db('car-doctor-nextjs')
     return db;
   } catch (error) {
     console.log({error});
   }
 };
+
+export default connectDB;

@@ -23,9 +23,18 @@ const page = () => {
         console.log(newUser);
         event.target.reset()
 
+    
+        const resp = await fetch('http://localhost:3000/api/auth/signup/new-user',{
+            
+            method : 'POST' ,
+            body : JSON.stringify(newUser),
 
+            headers : {
+                'content-type' :'application/JSON'
+            }
+        })
 
-      
+      console.log(resp);
         
     }
 
@@ -128,7 +137,7 @@ const page = () => {
                 {/* Sign Up Prompt */}
                 <p className="text-center text-sm mt-4 font-medium text-gray-700">
                   Already Registered ? {" "}
-                  <Link href="/loggedin" className="text-indigo-600 hover:underline">
+                  <Link href="/api/auth/login" className="text-indigo-600 hover:underline">
                     Please Log In first!
                   </Link>
                 </p>
