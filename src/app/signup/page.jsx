@@ -1,5 +1,5 @@
-
 "use client"
+
 import { ImFacebook2 } from "react-icons/im";
 import { FaGoogle } from "react-icons/fa";
 import Image from "next/image";

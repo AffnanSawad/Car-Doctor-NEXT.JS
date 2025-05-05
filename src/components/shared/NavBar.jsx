@@ -2,9 +2,15 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { signOut, useSession } from "next-auth/react";
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const { data: session, status } = useSession();
+
+
+    console.log(session);
 
     const NavItems = [
         { title: "Home", path: "/" },
@@ -83,13 +89,45 @@ const NavBar = () => {
                
  <button className="btn btn-error text-white">Appointment</button>
 
-<Link href="/loggedin">
+ { 
+ status === "authenticated" ? (
+  <Link href="loggedout">
+  
+  <button 
+  
+  onClick={()=> signOut()}
+  className="btn text-black btn-warning">
+    Log Out  
+  </button>
 
-<button className="btn btn-dash btn-error">Log In</button>
+  <br />
 
-</Link>         
+ 
+   
+  
+  
+  </Link>
+) 
 
-   </div>
+: (
+  <Link href="api/auth/signin">
+  
+  <button  className="btn  btn-accent">
+    Log In
+  </button>
+  
+  
+  </Link>
+
+
+)}
+     
+     <h1 className="text-sm  text-gray-600 bg-gray-100 px-4 py-1 rounded-full shadow-sm font-bold">
+  {session?.user?.email}
+</h1>
+
+     
+     </div>
         </div>
     );
 };
