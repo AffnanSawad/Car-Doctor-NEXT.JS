@@ -31,9 +31,9 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-pink-200  to-purple-300 px-4 py-12">
+    <div className="min-h-screen bg-gradient-to-r from-amber-100  to-pink-200 px-4 py-12">
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
-        <h1 className="text-5xl font-extrabold text-white text-center mb-12">Welcome to Our Blog</h1>
+        <h1 className="text-5xl font-extrabold text-black text-center mb-12">Welcome to Our Blog</h1>
 
         {blogPosts.map((post, index) => (
           <div

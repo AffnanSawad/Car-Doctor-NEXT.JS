@@ -17,7 +17,7 @@ const ServiceCard = ({services}) => {
    
    <p className="text-black font-semibold"> <span className="font-2xl">Price :</span>  $ {price} </p>
     <div className="card-actions">
-      <button className="btn btn-error">Buy Now</button>
+      <button className="btn btn-error text-white"> VIEW DETAILS </button>
     
    </div>
   </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 const About = () => {
@@ -37,7 +38,11 @@ const About = () => {
               Whether it's routine servicing or a major repair, your car is in safe hands. Visit our shop or
               contact us for a quote.
             </p>
+            <Link href='/about'>
+            
             <button className="btn btn-dash btn-error">Get More Info</button>
+            
+            </Link>
           </div>
         </div>
       </div>

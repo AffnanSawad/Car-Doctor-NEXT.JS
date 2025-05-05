@@ -57,9 +57,9 @@ const Banner = () => {
                 {/* Buttons */}
                 <div className="flex flex-wrap gap-3">
                   <Link href="/about">
-                    <button className="btn btn-error btn-sm sm:btn-md">Discover More</button>
+                    <button className="btn btn-error btn-sm text-white sm:btn-md">Discover More</button>
                   </Link>
-                  <Link href="/contact">
+                  <Link href="/contacts">
                     <button className="btn btn-dash btn-warning btn-sm sm:btn-md">Contact Us</button>
                   </Link>
                 </div>

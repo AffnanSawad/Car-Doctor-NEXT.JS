@@ -87,7 +87,7 @@ const NavBar = () => {
             {/* Desktop Appointment Button */}
             <div className="hidden   lg:flex navbar-end gap-5">
                
- <button className="btn btn-error text-white">Appointment</button>
+ {/* <button className="btn btn-error text-white">Appointment</button> */}
 
  { 
  status === "authenticated" ? (
@@ -112,7 +112,7 @@ const NavBar = () => {
 : (
   <Link href="/api/auth/signup">
   
-  <button  className="btn  btn-accent">
+  <button  className="btn text-white  btn-accent">
     Sign Up
   </button>
   
