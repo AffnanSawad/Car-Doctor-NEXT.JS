@@ -20,7 +20,7 @@ const ProductCard = ({SingleProduct}) => {
              <div className='flex items-center justify-center  my-1'>
              
 
-             <Link href={`/services/${SingleProduct.service_id}`}>
+             <Link href={`/services/${SingleProduct.id}`}>
               
               
               <button className="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition  ">

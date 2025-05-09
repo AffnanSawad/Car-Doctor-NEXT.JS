@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch fakeData.json --port 3004",
-    "json-server2": "json-server --watch FakeServiceData.json --port 5000"
+    "json-server": "json-server --watch fakeData.json --port 5004"
+    
   },
   "dependencies": {
     "daisyui": "^5.0.28",
