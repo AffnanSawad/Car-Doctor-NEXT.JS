@@ -1,6 +1,20 @@
 import Link from "next/link";
 
 
+// 🔸 This function will run before rendering to generate meta tags dynamically
+export const generateMetadata= async({ params }) => {
+ 
+  const { servicesID } = params;
+
+  const res = await fetch(`http://localhost:5004/ProvideServicesData/${servicesID}`);
+  const data = await res.json();
+
+  return {
+    title: data.title || 'Service Detail',
+    description: data.description || 'Explore our service details',
+  };
+}
+
 
 const ServiceDetailPage = async ({ params }) => {
 
