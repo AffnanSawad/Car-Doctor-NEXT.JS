@@ -1,7 +1,9 @@
 Project  Site Video : https://streamable.com/hiks9p
 
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Doctor - Next.js
+
+**Car Doctor** is a web application built with Next.js that allows users to book car repair services. The application offers users the ability to view available services list , their details , locations , contact details and many more.
 
 ## Getting Started
 
